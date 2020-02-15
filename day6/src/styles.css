@@ -1,0 +1,94 @@
+body,
+html {
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+}
+
+body {
+	font-family: sans-serif;
+	background-color: #76c4c6;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.frame {
+	width: 120px;
+	display: flex;
+	justify-content: space-between;
+	animation: 1s dotRotate infinite ease-in-out;
+}
+
+.element {
+	background-color: white;
+	width: 8px;
+	height: 8px;
+	border-radius: 4px;
+	display: inline-block;
+}
+
+.element:nth-child(4n + 1) {
+	background-color: #76c4c6;
+}
+
+@keyframes dotRotate {
+	0% {
+		transform: none;
+	}
+	40%,
+	100% {
+		transform: rotate(180deg);
+	}
+}
+
+@keyframes barStretch {
+	0% {
+		transform: none;
+	}
+	20% {
+		transform: scale(1, 2);
+	}
+	40% {
+		transform: none;
+	}
+}
+
+@media screen and (min-width: 320px) and (max-width: 640px) {
+	body {
+		background-color: #1dad9c;
+	}
+
+	.frame {
+		animation: none;
+		width: 80px;
+	}
+
+	.element {
+		height: 50px;
+		width: 12px;
+		border-radius: 0px;
+	}
+
+	.element:nth-child(1) {
+		background-color: white;
+		animation: 1s barStretch infinite ease-in-out;
+	}
+
+	.element:nth-child(2) {
+		animation: 1s barStretch infinite ease-in-out 0.1s;
+	}
+
+	.element:nth-child(3) {
+		animation: 1s barStretch infinite ease-in-out 0.2s;
+	}
+
+	.element:nth-child(4) {
+		animation: 1s barStretch infinite ease-in-out 0.3s;
+	}
+
+	.element:nth-child(5) {
+		background-color: white;
+		animation: 1s barStretch infinite ease-in-out 0.4s;
+	}
+}
