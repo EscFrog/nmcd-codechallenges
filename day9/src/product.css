@@ -1,0 +1,42 @@
+.product-section {
+	height: 590px;
+	padding: 40px 25px;
+	margin-bottom: 20px;
+}
+
+.product__pic {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 65%;
+}
+
+.product__pic img {
+	height: 80%;
+	width: auto;
+}
+
+.product__title {
+	margin-bottom: 20px;
+}
+
+.product__otherinfo {
+	display: flex;
+	justify-content: space-between;
+}
+
+.rating__star:nth-child(1) {
+	color: #febd51;
+}
+
+.rating__star:nth-child(2) {
+	color: #febd51;
+}
+
+.rating__star:nth-child(3) {
+	color: #febd51;
+}
+
+.rating__star:nth-child(4) {
+	color: #febd51;
+}
