@@ -24,7 +24,8 @@ body {
 	height: 600px;
 	background-color: #f8f8f8;
 	border-radius: 35px;
-	box-shadow: 20px 20px 30px #b9bfcb;
+	box-shadow: 20px 20px 30px #b9bfcb, 10px 12px 10px white inset,
+		-10px -12px 10px #e7e7e7 inset;
 	padding: 45px 25px;
 	display: flex;
 	flex-direction: column;
@@ -32,12 +33,12 @@ body {
 	font-size: 10px;
 }
 
-.frame a {
+.text-link {
 	color: #e2283e;
-	text-decoration: none;
+	cursor: pointer;
 }
 
-.title {
+.title h1 {
 	text-align: center;
 	color: #434343;
 	font-size: 15px;
@@ -58,26 +59,32 @@ body {
 	color: inherit;
 }
 
-input[type="checkbox"] {
-	width: 15px;
-	height: 15px;
-}
-
 .input__email {
 	margin-bottom: 23px;
 }
 
-.input__find-password {
+.input__find-pw {
 	text-align: right;
 	margin: 15px 0px;
 }
 
-.input__remember-user {
+.input__rmb-me {
 	display: flex;
 	align-items: center;
 }
 
-.buttons__btn {
+.rmb-me__cb {
+	width: 13px;
+	height: 13px;
+	border-radius: 3px;
+	border: 1px solid #ebebeb;
+	background-color: white;
+	margin-right: 5px;
+	cursor: pointer;
+	color: #e2283e;
+}
+
+.btn {
 	border: none;
 	height: 36px;
 	border-radius: 18px;
@@ -86,12 +93,12 @@ input[type="checkbox"] {
 	cursor: pointer;
 }
 
-.btn-signin {
+.buttons__sign-in {
 	width: 100%;
 	background-color: #e2283e;
 }
 
-.buttons__division {
+.buttons__gap {
 	margin: 30px 0px;
 	color: #434343;
 	font-size: 11px;
@@ -102,24 +109,30 @@ input[type="checkbox"] {
 	justify-content: space-between;
 }
 
-.btn-facebook {
+.buttons__container .btn {
 	width: 110px;
+}
+
+.buttons__facebook {
 	background-color: #475a95;
 }
 
-.btn-twitter {
-	width: 110px;
+.buttons__twitter {
 	background-color: #5da1f2;
 }
 
-.links {
-	margin-bottom: 30px;
+.help {
+	height: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-bottom: 40px;
 }
 
-.links__link {
+.help__link {
 	margin-bottom: 10px;
 }
 
-.link__question {
+.help__question {
 	margin: 0px 5px;
 }

@@ -9,56 +9,58 @@
 			href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap"
 			rel="stylesheet"
 		/>
+		<script
+			src="https://kit.fontawesome.com/cf7295c254.js"
+			crossorigin="anonymous"
+		></script>
 	</head>
 
 	<body>
 		<main class="frame">
-			<div class="title">Sign in</div>
+			<div class="title">
+				<h1>Sign in</h1>
+			</div>
 			<section class="input">
 				<input
 					type="text"
 					class="input__email input__textbox"
-					name="email"
 					placeholder="email"
 				/>
 				<input
 					type="password"
-					class="input__password input__textbox"
-					name="password"
+					class="input__pwd input__textbox"
 					placeholder="password"
 				/>
-				<div class="input__find-password">
-					<a href="#" class="input__link">
+				<div class="input__find-pw">
+					<span class="find-pw__link text-link">
 						Forgot Password?
-					</a>
+					</span>
 				</div>
-				<div class="input__remember-user">
-					<input
-						type="checkbox"
-						id="remember-user__check"
-						name="remember-user"
-					/>
-					<span>Remember Me</span>
+				<div class="input__rmb-me">
+					<div class="rmb-me__cb">
+						<i class="fas fa-check"></i>
+					</div>
+					<div class="rmb-me__text">Remember Me</div>
 				</div>
 			</section>
 			<section class="buttons">
-				<button class="buttons__btn btn-signin">Sign in</button>
-				<div class="buttons__division">
-					<span class="buttons__division-text">OR</span>
+				<button class="buttons__sign-in btn">Sign in</button>
+				<div class="buttons__gap">
+					<span>OR</span>
 				</div>
 				<div class="buttons__container">
-					<button class="buttons__btn btn-facebook">Facebook</button>
-					<button class="buttons__btn btn-twitter">Twitter</button>
+					<button class="buttons__facebook btn">Facebook</button>
+					<button class="buttons__twitter btn">Twitter</button>
 				</div>
 			</section>
-			<section class="links">
-				<div class="links__link">
-					<span class="link__question">need an account?</span>
-					<a href="#" class="link__text">Sign up</a>
+			<section class="help">
+				<div class="help__list">
+					<span class="help__question">need an account?</span>
+					<span class="help__link text-link">Sign up</span>
 				</div>
-				<div class="links__link">
-					<span class="link__question">forgot your password?</span>
-					<a href="#" class="link__text">Retrive</a>
+				<div class="help__list">
+					<span class="help__question">forgot your password?</span>
+					<span class="help__link text-link">Retrive</span>
 				</div>
 			</section>
 		</main>
