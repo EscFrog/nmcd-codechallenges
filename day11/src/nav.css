@@ -1,0 +1,78 @@
+.nav {
+	background-color: white;
+	height: 100px;
+	padding: 0px 30px;
+	position: relative;
+}
+
+.nav__mainrow {
+	display: flex;
+	justify-content: space-between;
+	height: 85%;
+}
+
+.nav__mainrow .mainrow__navicon-back {
+	position: absolute;
+	top: 0%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 86px;
+	height: 86px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: linear-gradient(
+		to bottom,
+		#dbdee2 50%,
+		rgba(0, 0, 0, 0) 50%
+	);
+}
+
+.nav__mainrow .mainrow__navicon {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	border: 3px solid white;
+	background-color: #4068ff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-size: 20px;
+	box-shadow: 0px 10px 10px 0px lightgray;
+}
+
+.nav__mainrow .mainrow__column {
+	width: 40px;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.3em;
+}
+
+.mainrow__column:nth-child(2) {
+	color: #4068ff;
+	border-top: 2px solid #4068ff;
+}
+
+.nav__subrow {
+	height: 15%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.nav__subrow .subrow__column {
+	width: 124px;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.nav__subrow .subrow__bar {
+	width: 124px;
+	height: 5px;
+	border-radius: 2.5px;
+	border-top: 5px solid #e9ebf2;
+}

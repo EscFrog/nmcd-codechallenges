@@ -1,5 +1,44 @@
 @import "reset.css";
+@import "pic.css";
+@import "info.css";
+@import "nav.css";
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
+* {
+	box-sizing: border-box;
+}
 
 body {
-	font-family: sans-serif;
+	font-family: "Josefin Sans", sans-serif;
+	background-color: #e8e8eb;
+	color: #99a8c1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.frame {
+	height: 825px;
+	width: 380px;
+	border-radius: 30px;
+	overflow: hidden;
+	z-index: -1;
+	position: relative;
+	background-color: #f0f2f3;
+}
+
+.frame__background {
+	width: 100%;
+	-webkit-mask-image: linear-gradient(to bottom, white 30%, transparent 60%);
+	mask-image: linear-gradient(to bottom, white 30%, transparent 60%);
+	position: absolute;
+	z-index: inherit;
+}
+
+.frame__content {
+	padding: 0px 30px;
 }
