@@ -1,0 +1,20 @@
+.nav {
+	height: 45px;
+	width: 100%;
+	background-color: white;
+	position: absolute;
+	bottom: 0px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	font-size: 2em;
+	box-shadow: lightgray 0px -5px 20px 0px;
+}
+
+.nav .nav__column {
+	cursor: pointer;
+}
+
+.nav .nav__column:nth-child(2) {
+	color: #ea6371;
+}

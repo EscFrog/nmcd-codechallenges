@@ -1,0 +1,31 @@
+.contents__other .other__title-row {
+	margin-bottom: 12px;
+}
+
+.contents__other .other__list {
+	height: 250px;
+	overflow: scroll;
+	border-radius: 8px;
+}
+
+.other__list .other__category {
+	height: 46px;
+	padding: 10px;
+	background-color: white;
+	border-radius: 8px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+
+.other__list .other__category-count {
+	opacity: 0.5;
+	margin-top: 4px;
+}
+
+.other__list .other__category-link {
+	color: #ea6371;
+	font-size: 1.2em;
+}

@@ -1,0 +1,80 @@
+.contents__popular {
+	margin-bottom: 22px;
+}
+
+.contents__popular .popular__title-row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 12px;
+}
+
+.contents__popular .popular__viewall {
+	color: #ea6371;
+	cursor: pointer;
+}
+
+.contents__popular .popular__list {
+	height: 150px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	overflow: scroll;
+	border-radius: 10px;
+}
+
+.popular__list .popular__category {
+	width: 120px;
+	height: 70px;
+	border-radius: 10px;
+	margin-bottom: 10px;
+	overflow: hidden;
+	cursor: pointer;
+	position: relative;
+}
+.popular__list .popular__category-img {
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+}
+
+.popular__category:nth-child(1) .popular__category-img {
+	background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT9PCgcuXcqgeReHIesrE6SDpK-w0p20m-7YVYCbRZNt0qDzqA6);
+}
+
+.popular__category:nth-child(2) .popular__category-img {
+	background-image: url(https://img.buzzfeed.com/thumbnailer-prod-us-east-1/3ebf39051d7d4338b4c23b73d513360b/BFV21142_Cream_Cheese_and_Fruit_Pastries_Final.jpg);
+}
+
+.popular__category:nth-child(3) .popular__category-img {
+	background-image: url(https://d167y3o4ydtmfg.cloudfront.net/183/studio/assets/v1544535483305_1357944469/heinz_recipes_fp.jpg);
+}
+
+.popular__category:nth-child(4) .popular__category-img {
+	background-image: url(https://www.ambitiouskitchen.com/wp-content/uploads/2019/07/berrysmoothie-4-725x725-1.jpg);
+	);
+}
+
+.popular__category:nth-child(5) .popular__category-img {
+	background-image: url(https://image.spreadshirtmedia.com/image-server/v1/compositions/T347A1PA2978PT17X12Y35D1008669130FS2680/views/1,width=650,height=650,appearanceId=1,backgroundColor=d6daf0/classic-sad-frog.jpg);
+}
+
+.popular__list .popular__category-mask {
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(white, black);
+	opacity: 0.5;
+	position: absolute;
+}
+
+.popular__list .popular__category-name {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	position: absolute;
+}
