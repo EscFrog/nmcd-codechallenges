@@ -1,0 +1,88 @@
+.contents {
+	height: 100%;
+	padding-top: 25px;
+}
+.contents__header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.contents__header i {
+	font-size: 1.3em;
+}
+
+.contents__profile {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.contents__profile .profile__box {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.contents__profile .profile__photo {
+	width: 68px;
+	height: 68px;
+	border-radius: 50%;
+	background-image: url(https://i.pinimg.com/564x/75/76/0b/75760b9d1724036471ca67a6feeef0f6.jpg);
+	background-size: cover;
+}
+
+.contents__profile .profile__name {
+	font-family: "Pacifico";
+	color: #9644a5;
+	font-size: 1.5em;
+	margin-top: 20px;
+}
+
+.contents__profile .profile__location {
+	margin-top: 15px;
+}
+
+.contents__profile .profile__btn {
+	width: 100%;
+	margin-top: 35px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.profile__btn .btn {
+	width: 130px;
+	height: 40px;
+	border-radius: 10px;
+	font-size: 13px;
+	border-style: none;
+	box-shadow: 0px 3px 5px 0px #868686;
+}
+
+.profile__btn .btn-follow {
+	color: #868686;
+}
+
+.profile__btn .btn-message {
+	color: white;
+	background-color: #9644a5;
+}
+
+.contents__profile .profile__otherinfo {
+	margin-top: 35px;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.profile__otherinfo .otherinfo__column {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.profile__otherinfo .otherinfo__label {
+	margin-top: 3px;
+}

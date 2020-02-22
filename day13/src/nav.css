@@ -1,0 +1,22 @@
+.nav .nav__icons {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	font-size: 1.5em;
+}
+
+.nav__icons .icons__icon:nth-child(1) {
+	color: #9644a5;
+}
+
+.nav .nav__extra-row {
+	height: 10px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.nav__extra-row .extra-row__column:nth-child(2) {
+	width: 110px;
+	border-top: 2px solid #868686;
+}
