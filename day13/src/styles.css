@@ -30,11 +30,18 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	padding: 10px;
+}
+
+.background-frame {
+	width: 100%;
+	height: 100%;
+	position: relative;
 }
 
 .background-img {
-	width: 310px;
-	height: 670px;
+	width: 100%;
+	height: 100%;
 	position: absolute;
 	background-image: url(https://i.pinimg.com/564x/75/76/0b/75760b9d1724036471ca67a6feeef0f6.jpg);
 	background-position: center center;
@@ -42,18 +49,18 @@ body {
 }
 
 .background-mask {
-	width: 310px;
-	height: 670px;
-	position: absolute;
+	width: 100%;
+	height: 100%;
 	background-color: rgba(255, 255, 255, 0.7);
 }
 
 .inner-frame {
-	width: 310px;
-	height: 670px;
+	width: 100%;
+	height: 100%;
 	padding: 0px 20px;
 	z-index: 1;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	position: absolute;
 }
