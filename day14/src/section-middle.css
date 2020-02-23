@@ -1,0 +1,64 @@
+.middle__content {
+    overflow: hidden;
+}
+
+.middle__content .middle__picture-box {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #fccdc0;
+	position: absolute;
+}
+
+.middle__picture-box .picture-box__pic {
+	width: 80px;
+	height: 80px;
+	background-image: url(https://image.flaticon.com/icons/svg/2579/2579215.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.middle__content .middle__extra-box {
+	width: 100%;
+	height: 25%;
+	background-color: #293a4a;
+	position: absolute;
+	bottom: -25%;
+	display: flex;
+	justify-content: space-between;
+    padding: 10px;
+}
+
+.middle__content:hover .middle__picture-box {
+	animation: 0.2s middle__picture-box-anim forwards linear;
+}
+
+@keyframes middle__picture-box-anim {
+	from {
+	}
+	to {
+        transform: translateY(-15%);
+    }
+}
+
+.middle__content:hover .middle__extra-box {
+	animation: 0.2s middle__extra-box-anim forwards linear;
+}
+
+@keyframes middle__extra-box-anim {
+	from {
+	}
+	to {
+        transform: translateY(-100%);
+}
+
+.middle__extra-box .middle__info {
+	align-self: flex-start;
+}
+
+.middle__extra-box .middle__link-btn {
+	align-self: flex-end;
+}
