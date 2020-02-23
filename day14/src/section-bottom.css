@@ -12,6 +12,11 @@
 	align-items: center;
 	background-color: #cbf0e4;
 	position: absolute;
+	transition: all linear 0.2s;
+}
+
+.bottom__content:hover .bottom__picture-box {
+	transform: scale(0.6) translateY(-20%);
 }
 
 .bottom__picture-box .picture-box__pic {
@@ -32,15 +37,4 @@
 	justify-content: space-between;
 	align-items: flex-end;
 	padding: 10px;
-}
-
-.bottom__content:hover .bottom__picture-box {
-	animation: 0.2s bottom__picture-box-anim forwards linear;
-}
-
-@keyframes bottom__picture-box-anim {
-	from {
-	}
-	to {
-        transform: scale(0.6) translateY(-20%);
 }

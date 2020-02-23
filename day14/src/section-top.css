@@ -1,6 +1,3 @@
-.top__content {
-}
-
 .top__content .top__picture-box {
 	width: 100%;
 	height: 100%;
@@ -30,21 +27,12 @@
 	justify-content: center;
 	align-items: center;
 	opacity: 0;
+	transition: all linear 0.2s;
 }
 
 .top__content:hover .top__extra-box {
-	animation: 0.2s top__extra-box-anim forwards linear;
-}
-
-@keyframes top__extra-box-anim {
-	from {
-		transform: translate(0px, 0px);
-		opacity: 0;
-	}
-	to {
-		transform: translate(8px, 8px);
-		opacity: 1;
-	}
+	transform: translate(8px, 8px);
+	opacity: 1;
 }
 
 .top__extra-box .top__info {
