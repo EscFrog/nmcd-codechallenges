@@ -3,8 +3,7 @@
 }
 
 .seller__header-img {
-	background: url(https://images.pexels.com/photos/220444/pexels-photo-220444.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)
-		no-repeat center center;
+	background: url("../img/seller_bg.jpeg") no-repeat center center;
 	background-attachment: fixed;
 	height: 40%;
 	position: relative;
